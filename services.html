@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - PawSpa Professional Pet Grooming</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pet-orange': '#FF8C42',
+            'pet-yellow': '#FFD662',
+            'pet-blue': '#4A90E2',
+            'pet-gray': '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- PawButton Component System -->
+  <script src="components/PawButton.js"></script>
+  <script src="components/buttonInit.js"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center">
+          <span class="text-white font-bold text-lg">🐾</span>
+        </div>
+        <h2 class="text-2xl font-bold text-gray-800">PawSpa</h2>
+      </div>
+      
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-pet-orange transition-colors">Home</a>
+        <a href="services.html" class="text-pet-orange font-semibold">Services</a>
+        <a href="index.html#about" class="text-gray-700 hover:text-pet-orange transition-colors">About</a>
+        <a href="index.html#contact" class="text-gray-700 hover:text-pet-orange transition-colors">Contact</a>
+      </div>
+      
+      <button id="header-book-btn" class="bg-pet-orange text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+        Book Now
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-pet-blue to-blue-600 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Our Professional Services
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          Comprehensive pet grooming services tailored to your furry friend's needs
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
+            <div class="w-20 h-20 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-3xl">✂️</span>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Full Grooming</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Complete grooming package including bath, haircut, nail trim, ear cleaning, and professional styling for all breeds and sizes.
+            </p>
+            <div class="mb-6">
+              <p class="text-pet-orange font-bold text-2xl mb-2">Starting at $45</p>
+              <p class="text-sm text-gray-500">Price varies by size and breed</p>
+            </div>
+            <ul class="text-left space-y-2 mb-6">
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-orange rounded-full mr-3"></span>
+                Professional wash & dry
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-orange rounded-full mr-3"></span>
+                Breed-specific cut & styling
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-orange rounded-full mr-3"></span>
+                Nail trimming & filing
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-orange rounded-full mr-3"></span>
+                Ear cleaning & inspection
+              </li>
+            </ul>
+            <button class="w-full bg-pet-orange text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-semibold mt-auto">
+              Book Full Grooming
+            </button>
+          </div>
+          
+          <!-- Service Card 2 -->
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
+            <div class="w-20 h-20 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-3xl">🛁</span>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Bath & Brush</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Relaxing bath experience with premium shampoo, conditioning treatment, and thorough brushing to remove mats and loose fur.
+            </p>
+            <div class="mb-6">
+              <p class="text-pet-orange font-bold text-2xl mb-2">Starting at $25</p>
+              <p class="text-sm text-gray-500">Add-ons available</p>
+            </div>
+            <ul class="text-left space-y-2 mb-6">
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-yellow rounded-full mr-3"></span>
+                Premium shampoo & conditioner
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-yellow rounded-full mr-3"></span>
+                De-shedding treatment
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-yellow rounded-full mr-3"></span>
+                Thorough brushing & detangling
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-yellow rounded-full mr-3"></span>
+                Warm air drying
+              </li>
+            </ul>
+            <button class="w-full bg-pet-yellow text-white py-3 rounded-lg hover:bg-yellow-500 transition-colors font-semibold mt-auto">
+              Book Bath & Brush
+            </button>
+          </div>
+          
+          <!-- Service Card 3 -->
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
+            <div class="w-20 h-20 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-3xl">💅</span>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Nail Care</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Professional nail trimming and paw care services to keep your pet comfortable and prevent overgrowth or splitting.
+            </p>
+            <div class="mb-6">
+              <p class="text-pet-orange font-bold text-2xl mb-2">Starting at $15</p>
+              <p class="text-sm text-gray-500">Quick & gentle service</p>
+            </div>
+            <ul class="text-left space-y-2 mb-6">
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-blue rounded-full mr-3"></span>
+                Precise nail trimming
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-blue rounded-full mr-3"></span>
+                Nail filing & smoothing
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-blue rounded-full mr-3"></span>
+                Paw pad inspection
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-blue rounded-full mr-3"></span>
+                Quick & stress-free
+              </li>
+            </ul>
+            <button class="w-full bg-pet-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold mt-auto">
+              Book Nail Care
+            </button>
+          </div>
+          
+          <!-- Service Card 4 -->
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
+            <div class="w-20 h-20 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-3xl">🦷</span>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Dental Care</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Comprehensive teeth cleaning and oral health maintenance to prevent dental disease and keep your pet's breath fresh.
+            </p>
+            <div class="mb-6">
+              <p class="text-pet-orange font-bold text-2xl mb-2">Starting at $30</p>
+              <p class="text-sm text-gray-500">Gentle dental care</p>
+            </div>
+            <ul class="text-left space-y-2 mb-6">
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-orange rounded-full mr-3"></span>
+                Teeth brushing & cleaning
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-orange rounded-full mr-3"></span>
+                Tartar removal
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-orange rounded-full mr-3"></span>
+                Gum health assessment
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-orange rounded-full mr-3"></span>
+                Fresh breath treatment
+              </li>
+            </ul>
+            <button class="w-full bg-pet-orange text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-semibold mt-auto">
+              Book Dental Care
+            </button>
+          </div>
+          
+          <!-- Service Card 5 -->
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
+            <div class="w-20 h-20 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-3xl">🧴</span>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Flea Treatment</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Safe and effective flea and tick prevention treatments using veterinarian-approved products and methods.
+            </p>
+            <div class="mb-6">
+              <p class="text-pet-orange font-bold text-2xl mb-2">Starting at $35</p>
+              <p class="text-sm text-gray-500">Vet-approved products</p>
+            </div>
+            <ul class="text-left space-y-2 mb-6">
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-yellow rounded-full mr-3"></span>
+                Flea & tick inspection
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-yellow rounded-full mr-3"></span>
+                Safe treatment application
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-yellow rounded-full mr-3"></span>
+                Prevention recommendations
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-yellow rounded-full mr-3"></span>
+                Follow-up care advice
+              </li>
+            </ul>
+            <button class="w-full bg-pet-yellow text-white py-3 rounded-lg hover:bg-yellow-500 transition-colors font-semibold mt-auto">
+              Book Flea Treatment
+            </button>
+          </div>
+          
+          <!-- Service Card 6 -->
+          <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
+            <div class="w-20 h-20 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-3xl">✨</span>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Premium Spa</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Luxury spa experience with aromatherapy, relaxing massage, premium treatments, and extra pampering for your special pet.
+            </p>
+            <div class="mb-6">
+              <p class="text-pet-orange font-bold text-2xl mb-2">Starting at $75</p>
+              <p class="text-sm text-gray-500">Ultimate luxury experience</p>
+            </div>
+            <ul class="text-left space-y-2 mb-6">
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-blue rounded-full mr-3"></span>
+                Aromatherapy bath
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-blue rounded-full mr-3"></span>
+                Relaxing massage
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-blue rounded-full mr-3"></span>
+                Premium grooming products
+              </li>
+              <li class="flex items-center text-gray-600">
+                <span class="w-2 h-2 bg-pet-blue rounded-full mr-3"></span>
+                Extra pampering & care
+              </li>
+            </ul>
+            <button class="w-full bg-pet-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold mt-auto">
+              Book Premium Spa
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Additional Services</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Extra care options to keep your pet looking and feeling their absolute best
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Additional Service 1 -->
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-xl">👁️</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Eye Cleaning</h3>
+            <p class="text-gray-600 text-sm mb-3">Gentle cleaning of tear stains and eye area</p>
+            <p class="text-pet-orange font-bold">$10</p>
+          </div>
+          
+          <!-- Additional Service 2 -->
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-xl">🎀</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Bow & Bandana</h3>
+            <p class="text-gray-600 text-sm mb-3">Cute finishing touches for special occasions</p>
+            <p class="text-pet-orange font-bold">$5</p>
+          </div>
+          
+          <!-- Additional Service 3 -->
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-xl">🧼</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">De-skunking</h3>
+            <p class="text-gray-600 text-sm mb-3">Emergency odor removal treatment</p>
+            <p class="text-pet-orange font-bold">$40</p>
+          </div>
+          
+          <!-- Additional Service 4 -->
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-xl">🏠</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Mobile Service</h3>
+            <p class="text-gray-600 text-sm mb-3">We come to you for anxious pets</p>
+            <p class="text-pet-orange font-bold">+$20</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Guide Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pricing Guide by Size</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Our pricing is based on your pet's size and coat condition. All prices are starting rates.
+          </p>
+        </div>
+        
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+          <!-- Small Pets -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Small Pets</h3>
+            <p class="text-gray-600 mb-4">Under 25 lbs<br>(Chihuahua, Yorkie, etc.)</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span>Full Grooming:</span>
+                <span class="font-bold text-pet-orange">$45-60</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Bath & Brush:</span>
+                <span class="font-bold text-pet-orange">$25-35</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Nail Care:</span>
+                <span class="font-bold text-pet-orange">$15</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Medium Pets -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Medium Pets</h3>
+            <p class="text-gray-600 mb-4">25-60 lbs<br>(Cocker Spaniel, Beagle, etc.)</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span>Full Grooming:</span>
+                <span class="font-bold text-pet-orange">$60-80</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Bath & Brush:</span>
+                <span class="font-bold text-pet-orange">$35-50</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Nail Care:</span>
+                <span class="font-bold text-pet-orange">$20</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Large Pets -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Large Pets</h3>
+            <p class="text-gray-600 mb-4">60-90 lbs<br>(Golden Retriever, Lab, etc.)</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span>Full Grooming:</span>
+                <span class="font-bold text-pet-orange">$80-100</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Bath & Brush:</span>
+                <span class="font-bold text-pet-orange">$50-65</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Nail Care:</span>
+                <span class="font-bold text-pet-orange">$25</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Extra Large Pets -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Extra Large</h3>
+            <p class="text-gray-600 mb-4">90+ lbs<br>(Great Dane, Mastiff, etc.)</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span>Full Grooming:</span>
+                <span class="font-bold text-pet-orange">$100+</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Bath & Brush:</span>
+                <span class="font-bold text-pet-orange">$65+</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Nail Care:</span>
+                <span class="font-bold text-pet-orange">$30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-8 text-center">
+          <p class="text-gray-600 text-sm">
+            * Prices may vary based on coat condition, behavior, and specific breed requirements. 
+            Contact us for a personalized quote.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-pet-blue text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Pamper Your Pet?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Book your appointment today and give your furry friend the care they deserve
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button id="cta-book-btn" class="bg-pet-orange text-white px-8 py-3 rounded-lg text-lg hover:bg-orange-600 transition-colors font-semibold">
+            Book Appointment
+          </button>
+          <a href="index.html#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg text-lg hover:bg-white hover:text-pet-blue transition-colors font-semibold">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center">
+              <span class="text-white font-bold text-lg">🐾</span>
+            </div>
+            <h3 class="text-2xl font-bold">PawSpa</h3>
+          </div>
+          <p class="text-gray-300">
+            Professional pet grooming services with a personal touch. 
+            Your pet's comfort and happiness is our priority.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="index.html" class="hover:text-pet-orange transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-pet-orange transition-colors">Services</a></li>
+            <li><a href="index.html#about" class="hover:text-pet-orange transition-colors">About</a></li>
+            <li><a href="index.html#contact" class="hover:text-pet-orange transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-2 text-gray-300">
+            <p>123 Pet Paradise Lane</p>
+            <p>Grooming City, GC 12345</p>
+            <p>(555) 123-PAWS</p>
+            <p>info@pawspa.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+        <p>&copy; 2025 PawSpa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
