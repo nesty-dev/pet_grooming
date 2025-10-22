@@ -5,7 +5,7 @@ A modern, responsive pet grooming website built with HTML5, Tailwind CSS, and va
 ## ✨ Features
 
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
-- **SEO Optimized**: Proper meta tags, semantic HTML, and structured content  
+- **SEO Optimized**: Proper meta tags, semantic HTML, and structured content
 - **Accessible**: WCAG compliant with ARIA labels, keyboard navigation, and screen reader support
 - **Fast Loading**: Optimized assets and minimal dependencies
 - **Clean Code**: Modular JavaScript components and consistent styling
@@ -15,7 +15,7 @@ A modern, responsive pet grooming website built with HTML5, Tailwind CSS, and va
 ```
 pet-grooming/
 ├── index.html              # Homepage
-├── services.html           # Services page  
+├── services.html           # Services page
 ├── assets/
 │   ├── css/
 │   │   └── custom.css      # Custom styles and accessibility enhancements
@@ -29,12 +29,14 @@ pet-grooming/
 ## 🎨 Design System
 
 ### Color Palette
+
 - **Primary Orange**: `#F97316` - Main brand color for CTAs and highlights
 - **Accent Yellow**: `#FEF08A` - Secondary actions and variety
-- **Light Blue**: `#E0F2FE` - Backgrounds and calm sections  
+- **Light Blue**: `#E0F2FE` - Backgrounds and calm sections
 - **Dark Gray**: `#1F2937` - Text and professional elements
 
 ### Typography
+
 - Clean, readable fonts with proper contrast ratios
 - Consistent heading hierarchy (H1 → H2 → H3)
 - Responsive text sizes across devices
@@ -42,7 +44,7 @@ pet-grooming/
 ## 📱 Responsive Breakpoints
 
 - **Mobile**: < 640px
-- **Tablet**: 640px - 1024px  
+- **Tablet**: 640px - 1024px
 - **Desktop**: > 1024px
 
 ## ♿ Accessibility Features
@@ -63,13 +65,15 @@ pet-grooming/
 ## 📄 Pages
 
 ### Homepage (`index.html`)
+
 - Hero section with clear call-to-action
 - Services overview
 - About section with testimonials
 - Contact form with validation
 - Company information
 
-### Services (`services.html`)  
+### Services (`services.html`)
+
 - Detailed service descriptions
 - Pricing information by pet size
 - Additional service options
@@ -102,6 +106,7 @@ pet-grooming/
 ## 📞 Contact Information
 
 **PawSpa Professional Pet Grooming**
+
 - 📍 123 Pet Paradise Lane, Grooming City, GC 12345
 - 📞 (555) 123-PAWS
 - ✉️ info@pawspa.com
@@ -109,4 +114,4 @@ pet-grooming/
 
 ---
 
-*Built with care for pets and their families* 🐾
+_Built with care for pets and their families_ 🐾

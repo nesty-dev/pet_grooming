@@ -150,18 +150,18 @@ const preselectService = (serviceName) => {
 
   // Map service names to option values
   const serviceMap = {
-    'full grooming': 'full-grooming',
-    'bath & brush': 'bath-brush',
-    'bath and brush': 'bath-brush',
-    'nail care': 'nail-care',
-    'dental care': 'dental-care',
-    'flea treatment': 'flea-treatment',
-    'premium spa': 'premium-spa'
+    "full grooming": "full-grooming",
+    "bath & brush": "bath-brush",
+    "bath and brush": "bath-brush",
+    "nail care": "nail-care",
+    "dental care": "dental-care",
+    "flea treatment": "flea-treatment",
+    "premium spa": "premium-spa",
   };
 
   const serviceKey = serviceName.toLowerCase();
   const serviceValue = serviceMap[serviceKey];
-  
+
   if (serviceValue) {
     serviceSelect.value = serviceValue;
   }
