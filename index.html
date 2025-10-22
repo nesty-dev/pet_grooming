@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawSpa - Professional Pet Grooming Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pet-orange': '#FF8C42',
+            'pet-yellow': '#FFD662',
+            'pet-blue': '#4A90E2',
+            'pet-gray': '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center">
+          <span class="text-white font-bold text-lg">🐾</span>
+        </div>
+        <h2 class="text-2xl font-bold text-gray-800">PawSpa</h2>
+      </div>
+      
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="text-gray-700 hover:text-pet-orange transition-colors">Home</a>
+        <a href="#services" class="text-gray-700 hover:text-pet-orange transition-colors">Services</a>
+        <a href="#about" class="text-gray-700 hover:text-pet-orange transition-colors">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-pet-orange transition-colors">Contact</a>
+      </div>
+      
+      <button class="bg-pet-orange text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+        Book Now
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-pet-blue to-blue-600 text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Premium Pet Grooming Services
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          Give your furry friends the royal treatment they deserve with our professional grooming services
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="bg-pet-orange text-white px-8 py-3 rounded-lg text-lg hover:bg-orange-600 transition-colors">
+            Schedule Appointment
+          </button>
+          <button class="border-2 border-white text-white px-8 py-3 rounded-lg text-lg hover:bg-white hover:text-pet-blue transition-colors">
+            View Services
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            We offer comprehensive grooming services to keep your pets healthy, happy, and looking their best
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-2xl">✂️</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Full Grooming</h3>
+            <p class="text-gray-600 mb-4">Complete wash, cut, nail trim, and styling for all breeds</p>
+            <p class="text-pet-orange font-bold text-lg">Starting at $45</p>
+          </div>
+          
+          <!-- Service Card 2 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-2xl">🛁</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Bath & Brush</h3>
+            <p class="text-gray-600 mb-4">Relaxing bath with premium shampoo and thorough brushing</p>
+            <p class="text-pet-orange font-bold text-lg">Starting at $25</p>
+          </div>
+          
+          <!-- Service Card 3 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-2xl">💅</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Nail Care</h3>
+            <p class="text-gray-600 mb-4">Professional nail trimming and paw care services</p>
+            <p class="text-pet-orange font-bold text-lg">Starting at $15</p>
+          </div>
+          
+          <!-- Service Card 4 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-2xl">🦷</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Dental Care</h3>
+            <p class="text-gray-600 mb-4">Teeth cleaning and oral health maintenance</p>
+            <p class="text-pet-orange font-bold text-lg">Starting at $30</p>
+          </div>
+          
+          <!-- Service Card 5 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-2xl">🧴</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Flea Treatment</h3>
+            <p class="text-gray-600 mb-4">Safe and effective flea and tick prevention treatments</p>
+            <p class="text-pet-orange font-bold text-lg">Starting at $35</p>
+          </div>
+          
+          <!-- Service Card 6 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="w-16 h-16 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white text-2xl">✨</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Premium Spa</h3>
+            <p class="text-gray-600 mb-4">Luxury spa treatment with aromatherapy and massage</p>
+            <p class="text-pet-orange font-bold text-lg">Starting at $75</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Why Choose PawSpa?
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              With over 10 years of experience in pet care, we understand that your pets are family. 
+              Our certified groomers provide gentle, stress-free grooming in a clean, safe environment.
+            </p>
+            
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-pet-orange rounded-full flex items-center justify-center mt-1">
+                  <span class="text-white text-sm">✓</span>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800">Certified Professionals</h3>
+                  <p class="text-gray-600">Our team is trained and certified in pet grooming and safety</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-pet-orange rounded-full flex items-center justify-center mt-1">
+                  <span class="text-white text-sm">✓</span>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800">Stress-Free Environment</h3>
+                  <p class="text-gray-600">Calm, comfortable setting designed to reduce pet anxiety</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <div class="w-6 h-6 bg-pet-orange rounded-full flex items-center justify-center mt-1">
+                  <span class="text-white text-sm">✓</span>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800">Premium Products</h3>
+                  <p class="text-gray-600">Only the finest, pet-safe grooming products and tools</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-lg p-8 shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Happy Customers</h3>
+            
+            <div class="space-y-6">
+              <div class="border-l-4 border-pet-orange pl-4">
+                <p class="text-gray-600 italic mb-2">
+                  "PawSpa transformed my anxious rescue dog into a confident, well-groomed pup. The staff is amazing!"
+                </p>
+                <p class="font-semibold text-gray-800">- Sarah M.</p>
+              </div>
+              
+              <div class="border-l-4 border-pet-yellow pl-4">
+                <p class="text-gray-600 italic mb-2">
+                  "Best grooming service in town. My Golden Retriever always comes home looking and smelling fantastic."
+                </p>
+                <p class="font-semibold text-gray-800">- Mike R.</p>
+              </div>
+              
+              <div class="border-l-4 border-pet-blue pl-4">
+                <p class="text-gray-600 italic mb-2">
+                  "Professional, caring, and affordable. My cats actually enjoy their visits now!"
+                </p>
+                <p class="font-semibold text-gray-800">- Jennifer L.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Ready to book an appointment? Contact us today to schedule your pet's grooming session
+          </p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-pet-orange rounded-full flex items-center justify-center">
+                <span class="text-white text-xl">📍</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 text-lg mb-2">Location</h3>
+                <p class="text-gray-600">123 Pet Paradise Lane<br>Grooming City, GC 12345</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-pet-yellow rounded-full flex items-center justify-center">
+                <span class="text-white text-xl">📞</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 text-lg mb-2">Phone</h3>
+                <p class="text-gray-600">(555) 123-PAWS<br>(555) 123-7297</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-pet-blue rounded-full flex items-center justify-center">
+                <span class="text-white text-xl">⏰</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 text-lg mb-2">Hours</h3>
+                <p class="text-gray-600">
+                  Monday - Friday: 8:00 AM - 6:00 PM<br>
+                  Saturday: 9:00 AM - 5:00 PM<br>
+                  Sunday: 10:00 AM - 4:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="bg-gray-50 rounded-lg p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Book an Appointment</h3>
+            <form class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="owner-name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                  <input type="text" id="owner-name" name="owner-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pet-orange focus:border-transparent">
+                </div>
+                <div>
+                  <label for="pet-name" class="block text-gray-700 font-semibold mb-2">Pet Name</label>
+                  <input type="text" id="pet-name" name="pet-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pet-orange focus:border-transparent">
+                </div>
+              </div>
+              
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone</label>
+                  <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pet-orange focus:border-transparent">
+                </div>
+                <div>
+                  <label for="service" class="block text-gray-700 font-semibold mb-2">Service</label>
+                  <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pet-orange focus:border-transparent">
+                    <option>Full Grooming</option>
+                    <option>Bath & Brush</option>
+                    <option>Nail Care</option>
+                    <option>Dental Care</option>
+                    <option>Flea Treatment</option>
+                    <option>Premium Spa</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div>
+                <label for="preferred-date" class="block text-gray-700 font-semibold mb-2">Preferred Date</label>
+                <input type="date" id="preferred-date" name="preferred-date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pet-orange focus:border-transparent">
+              </div>
+              
+              <div>
+                <label for="instructions" class="block text-gray-700 font-semibold mb-2">Special Instructions</label>
+                <textarea id="instructions" name="instructions" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pet-orange focus:border-transparent" placeholder="Tell us about your pet's special needs or preferences..."></textarea>
+              </div>
+              
+              <button type="submit" class="w-full bg-pet-orange text-white py-3 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors">
+                Submit Appointment Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center">
+              <span class="text-white font-bold text-lg">🐾</span>
+            </div>
+            <h3 class="text-2xl font-bold">PawSpa</h3>
+          </div>
+          <p class="text-gray-300">
+            Professional pet grooming services with a personal touch. 
+            Your pet's comfort and happiness is our priority.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#home" class="hover:text-pet-orange transition-colors">Home</a></li>
+            <li><a href="#services" class="hover:text-pet-orange transition-colors">Services</a></li>
+            <li><a href="#about" class="hover:text-pet-orange transition-colors">About</a></li>
+            <li><a href="#contact" class="hover:text-pet-orange transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Contact Info</h4>
+          <div class="space-y-2 text-gray-300">
+            <p>123 Pet Paradise Lane</p>
+            <p>Grooming City, GC 12345</p>
+            <p>(555) 123-PAWS</p>
+            <p>info@pawspa.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+        <p>&copy; 2025 PawSpa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
