@@ -148,13 +148,22 @@ const preselectService = (serviceName) => {
   const serviceSelect = document.getElementById(ELEMENT_IDS.SERVICE_SELECT);
   if (!serviceSelect) return;
 
-  const options = Array.from(serviceSelect.options);
-  const matchingOption = options.find((option) =>
-    option.textContent.toLowerCase().includes(serviceName.toLowerCase())
-  );
+  // Map service names to option values
+  const serviceMap = {
+    'full grooming': 'full-grooming',
+    'bath & brush': 'bath-brush',
+    'bath and brush': 'bath-brush',
+    'nail care': 'nail-care',
+    'dental care': 'dental-care',
+    'flea treatment': 'flea-treatment',
+    'premium spa': 'premium-spa'
+  };
 
-  if (matchingOption) {
-    serviceSelect.value = matchingOption.value;
+  const serviceKey = serviceName.toLowerCase();
+  const serviceValue = serviceMap[serviceKey];
+  
+  if (serviceValue) {
+    serviceSelect.value = serviceValue;
   }
 };
 

@@ -4,35 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - PawSpa Professional Pet Grooming</title>
+  <meta name="description" content="Comprehensive pet grooming services including full grooming, bath & brush, nail care, dental care, flea treatment and premium spa packages. View pricing and book online.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            'pet-orange': '#FF8C42',
-            'pet-yellow': '#FFD662',
-            'pet-blue': '#4A90E2',
-            'pet-gray': '#6B7280'
+            'pet-orange': '#F97316',
+            'pet-yellow': '#FEF08A',
+            'pet-blue': '#E0F2FE',
+            'pet-gray': '#1F2937'
           }
         }
       }
     }
   </script>
+  <link rel="stylesheet" href="assets/css/custom.css">
   
   <!-- PawButton Component System -->
-  <script src="components/PawButton.js"></script>
-  <script src="components/buttonInit.js"></script>
+  <script src="assets/js/PawButton.js"></script>
+  <script src="assets/js/buttonInit.js"></script>
 </head>
 <body class="bg-gray-50">
+  <!-- Skip Navigation Link for Accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-pet-orange text-white px-4 py-2 rounded-lg z-50">Skip to main content</a>
+  
   <!-- Header -->
   <header class="bg-white shadow-md">
-    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center" role="navigation" aria-label="Main navigation">
       <div class="flex items-center space-x-2">
-        <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center">
+        <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center" role="img" aria-label="PawSpa logo">
           <span class="text-white font-bold text-lg">🐾</span>
         </div>
-        <h2 class="text-2xl font-bold text-gray-800">PawSpa</h2>
+        <span class="text-2xl font-bold text-gray-800">PawSpa</span>
       </div>
       
       <div class="hidden md:flex space-x-6">
@@ -48,7 +53,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-pet-blue to-blue-600 text-white py-16">
       <div class="container mx-auto px-4 text-center">
@@ -67,10 +72,10 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Service Card 1 -->
           <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
-            <div class="w-20 h-20 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="w-20 h-20 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-6" role="img" aria-label="Full grooming service icon">
               <span class="text-white text-3xl">✂️</span>
             </div>
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Full Grooming</h2>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Full Grooming</h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Complete grooming package including bath, haircut, nail trim, ear cleaning, and professional styling for all breeds and sizes.
             </p>
@@ -103,10 +108,10 @@
           
           <!-- Service Card 2 -->
           <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
-            <div class="w-20 h-20 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="w-20 h-20 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-6" role="img" aria-label="Bath and brush service icon">
               <span class="text-white text-3xl">🛁</span>
             </div>
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Bath & Brush</h2>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Bath & Brush</h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Relaxing bath experience with premium shampoo, conditioning treatment, and thorough brushing to remove mats and loose fur.
             </p>
@@ -139,10 +144,10 @@
           
           <!-- Service Card 3 -->
           <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
-            <div class="w-20 h-20 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="w-20 h-20 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-6" role="img" aria-label="Nail care service icon">
               <span class="text-white text-3xl">💅</span>
             </div>
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Nail Care</h2>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Nail Care</h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Professional nail trimming and paw care services to keep your pet comfortable and prevent overgrowth or splitting.
             </p>
@@ -175,10 +180,10 @@
           
           <!-- Service Card 4 -->
           <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
-            <div class="w-20 h-20 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="w-20 h-20 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-6" role="img" aria-label="Dental care service icon">
               <span class="text-white text-3xl">🦷</span>
             </div>
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Dental Care</h2>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Dental Care</h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Comprehensive teeth cleaning and oral health maintenance to prevent dental disease and keep your pet's breath fresh.
             </p>
@@ -211,10 +216,10 @@
           
           <!-- Service Card 5 -->
           <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
-            <div class="w-20 h-20 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="w-20 h-20 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-6" role="img" aria-label="Flea treatment service icon">
               <span class="text-white text-3xl">🧴</span>
             </div>
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Flea Treatment</h2>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Flea Treatment</h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Safe and effective flea and tick prevention treatments using veterinarian-approved products and methods.
             </p>
@@ -247,10 +252,10 @@
           
           <!-- Service Card 6 -->
           <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition-shadow border border-gray-100 flex flex-col">
-            <div class="w-20 h-20 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-6">
+            <div class="w-20 h-20 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-6" role="img" aria-label="Premium spa service icon">
               <span class="text-white text-3xl">✨</span>
             </div>
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Premium Spa</h2>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Premium Spa</h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
               Luxury spa experience with aromatherapy, relaxing massage, premium treatments, and extra pampering for your special pet.
             </p>
@@ -297,7 +302,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Additional Service 1 -->
           <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-            <div class="w-12 h-12 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-12 h-12 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Eye cleaning service icon">
               <span class="text-white text-xl">👁️</span>
             </div>
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Eye Cleaning</h3>
@@ -307,7 +312,7 @@
           
           <!-- Additional Service 2 -->
           <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-            <div class="w-12 h-12 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-12 h-12 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Bow and bandana service icon">
               <span class="text-white text-xl">🎀</span>
             </div>
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Bow & Bandana</h3>
@@ -317,7 +322,7 @@
           
           <!-- Additional Service 3 -->
           <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-            <div class="w-12 h-12 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-12 h-12 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="De-skunking service icon">
               <span class="text-white text-xl">🧼</span>
             </div>
             <h3 class="text-lg font-semibold text-gray-800 mb-2">De-skunking</h3>
@@ -327,7 +332,7 @@
           
           <!-- Additional Service 4 -->
           <div class="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-            <div class="w-12 h-12 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-12 h-12 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Mobile service icon">
               <span class="text-white text-xl">🏠</span>
             </div>
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Mobile Service</h3>
@@ -464,7 +469,7 @@
       <div class="grid md:grid-cols-3 gap-8">
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center">
+            <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center" role="img" aria-label="PawSpa logo">
               <span class="text-white font-bold text-lg">🐾</span>
             </div>
             <h3 class="text-2xl font-bold">PawSpa</h3>

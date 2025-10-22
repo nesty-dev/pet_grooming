@@ -38,7 +38,7 @@ pet-theme/
 
 - Use Tailwind utility classes only
 - Use responsive prefixes: `sm:`, `md:`, `lg:`
-- Stick to project color palette (orange/yellow/blue/gray)
+- Stick to project color palette (#f97316 / #fef08a / #e0f2fe / #1f2937)
 - Avoid inline styles
 
 ---
