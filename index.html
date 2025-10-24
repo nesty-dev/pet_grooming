@@ -26,12 +26,12 @@
   <script src="assets/js/PawButton.js"></script>
   <script src="assets/js/buttonInit.js"></script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-pet-blue">
   <!-- Skip Navigation Link for Accessibility -->
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-pet-orange text-white px-4 py-2 rounded-lg z-50">Skip to main content</a>
   
   <!-- Header -->
-  <header class="bg-white shadow-md">
+  <header class="bg-pet-blue shadow-md">
     <nav class="container mx-auto px-4 py-4 flex justify-between items-center" role="navigation" aria-label="Main navigation">
       <div class="flex items-center space-x-2">
         <div class="w-10 h-10 bg-pet-orange rounded-full flex items-center justify-center" role="img" aria-label="PawSpa logo">
@@ -41,10 +41,10 @@
       </div>
       
       <div class="hidden md:flex space-x-6">
-        <a href="#home" class="text-gray-700 hover:text-pet-orange transition-colors">Home</a>
-        <a href="services.html" class="text-gray-700 hover:text-pet-orange transition-colors">Services</a>
-        <a href="#about" class="text-gray-700 hover:text-pet-orange transition-colors">About</a>
-        <a href="#contact" class="text-gray-700 hover:text-pet-orange transition-colors">Contact</a>
+        <a href="#home" class="text-gray-700 hover:text-pet-orange transition-colors font-semibold">Home</a>
+        <a href="services.html" class="text-gray-700 hover:text-pet-orange transition-colors font-semibold">Services</a>
+        <a href="#about" class="text-gray-700 hover:text-pet-orange transition-colors font-semibold">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-pet-orange transition-colors font-semibold">Contact</a>
       </div>
       
       <button id="header-book-btn" class="bg-pet-orange text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
@@ -55,7 +55,7 @@
 
   <main id="main-content">
     <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-br from-pet-blue to-blue-600 text-white py-20">
+    <section id="home" class="bg-pet-gray text-white py-20">
       <div class="container mx-auto px-4 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
           Premium Pet Grooming Services
@@ -75,7 +75,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-16 bg-white">
+    <section id="services" class="py-16">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
@@ -86,63 +86,63 @@
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Service Card 1 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Full grooming service icon">
               <span class="text-white text-2xl">✂️</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Full Grooming</h3>
             <p class="text-gray-600 mb-4">Complete wash, cut, nail trim, and styling for all breeds</p>
-            <p class="text-pet-orange font-bold text-lg">Starting at $45</p>
+            <p class="text-pet-orange font-bold text-lg mt-auto">Starting at $45</p>
           </div>
           
           <!-- Service Card 2 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Bath and brush service icon">
               <span class="text-white text-2xl">🛁</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Bath & Brush</h3>
             <p class="text-gray-600 mb-4">Relaxing bath with premium shampoo and thorough brushing</p>
-            <p class="text-pet-orange font-bold text-lg">Starting at $25</p>
+            <p class="text-pet-orange font-bold text-lg mt-auto">Starting at $25</p>
           </div>
           
           <!-- Service Card 3 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Nail care service icon">
               <span class="text-white text-2xl">💅</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Nail Care</h3>
             <p class="text-gray-600 mb-4">Professional nail trimming and paw care services</p>
-            <p class="text-pet-orange font-bold text-lg">Starting at $15</p>
+            <p class="text-pet-orange font-bold text-lg mt-auto">Starting at $15</p>
           </div>
           
           <!-- Service Card 4 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-pet-orange rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Dental care service icon">
               <span class="text-white text-2xl">🦷</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Dental Care</h3>
             <p class="text-gray-600 mb-4">Teeth cleaning and oral health maintenance</p>
-            <p class="text-pet-orange font-bold text-lg">Starting at $30</p>
+            <p class="text-pet-orange font-bold text-lg mt-auto">Starting at $30</p>
           </div>
           
           <!-- Service Card 5 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-pet-yellow rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Flea treatment service icon">
               <span class="text-white text-2xl">🧴</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Flea Treatment</h3>
             <p class="text-gray-600 mb-4">Safe and effective flea and tick prevention treatments</p>
-            <p class="text-pet-orange font-bold text-lg">Starting at $35</p>
+            <p class="text-pet-orange font-bold text-lg mt-auto">Starting at $35</p>
           </div>
           
           <!-- Service Card 6 -->
-          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow flex flex-col">
             <div class="w-16 h-16 bg-pet-blue rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label="Premium spa service icon">
               <span class="text-white text-2xl">✨</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Premium Spa</h3>
             <p class="text-gray-600 mb-4">Luxury spa treatment with aromatherapy and massage</p>
-            <p class="text-pet-orange font-bold text-lg">Starting at $75</p>
+            <p class="text-pet-orange font-bold text-lg mt-auto">Starting at $75</p>
           </div>
         </div>
       </div>
@@ -194,7 +194,7 @@
             </div>
           </div>
           
-          <div class="bg-white rounded-lg p-8 shadow-lg">
+          <div class="rounded-lg p-8 shadow-lg">
             <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Happy Customers</h3>
             
             <div class="space-y-6">
@@ -225,7 +225,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white">
+    <section id="contact" class="py-16">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
